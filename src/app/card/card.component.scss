@@ -1,0 +1,34 @@
+
+.shadow-card{
+    text-align: center;
+}
+
+.body-card{
+    padding: 1rem;
+}
+
+.image-card{
+    padding-bottom: 2rem;
+}
+
+.paraghap-card{
+    padding: 1rem;
+}
+
+.action-card{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+
+
+@media only screen and (min-width: 480px) {
+    .shadow-card {
+        background: #FFFFFF;
+        box-shadow: 3px 4px 9px 3px rgba(187, 187, 187, 0.25);
+        border-radius: 5px;
+    }
+}

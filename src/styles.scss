@@ -1,0 +1,42 @@
+/*
+** ToDo: change variables directly at Boostrap
+*/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #2D2C3A;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    color: #1B365D;
+}
+
+.vh-center {
+    display: flex;
+    width: 100vw;
+    height: calc(100vh - 80px);
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    background-color: #2196F3;
+    border-radius: 22px;
+    height: 44px;
+    border: transparent;
+    margin: .5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.btn-ghost {
+    color: #2196F3;
+    background-color: transparent;
+    border: transparent;
+}
