@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.4.
 
-##Important Notes
+## Important Notes
 this project could have many ToDo comments as a technical debt, because its developing right now
 
 ## Development server
