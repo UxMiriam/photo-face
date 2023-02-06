@@ -9,5 +9,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./id-photo.component.scss']
 })
 export class IdPhotoComponent {
-
+  passData = {
+    imageUrl: '../../assets/img/autophoto/credencial-muestra.svg',
+    imgAlt: 'texto descriptivo',
+    title: '¡La fotografía es automática!',
+    paragraph: 'Coloca tu identificación oficial (INE, Pasaporte o FM3) dentro del margen rojo hasta que cambie a color azul.',
+  }
 }

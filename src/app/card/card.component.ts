@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 
 /**
@@ -12,14 +12,21 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.scss']
 })
-export class CardComponent implements OnInit{
-  showHeader?: boolean = true;
-  imageUrl?: string = '../../assets/img/autophoto/credencial-muestra.svg';
-  imgAlt?: string = 'texto descriptivo'
-  title: string = '¡La fotografía es automática!';
-  paragraph: string = 'Coloca tu identificación oficial (INE, Pasaporte o FM3) dentro del margen rojo hasta que cambie a color azul.';
+export class CardComponent implements OnInit {
+  @Input() data: any;
+  showHeader?: boolean = false;
+  imageUrl?: string;
+  imgAlt?: string;
+  title: string = '';
+  paragraph: string = '';
+  showBtnGhost?: boolean = false;
 
-  ngOnInit(){
-    
+  ngOnInit() {
+    this.showHeader = this.data.showHeader;
+    this.imageUrl = this.data.imageUrl;
+    this.imgAlt = this.data.imgAlt;
+    this.title = this.data.title;
+    this.paragraph = this.data.paragraph;
+    this.showBtnGhost = this.data.showBtnGhost;
   }
 }
