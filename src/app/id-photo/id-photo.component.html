@@ -1,1 +1,6 @@
-<app-card [data]="passData"></app-card>
+<app-card *ngIf="stepOne === false; else photoId" [data]="passData" (clicked)="nextView($event)"></app-card>
+<ng-template #photoId>
+    <app-card [data]="{}" (clicked)="nextStep($event)">
+        <app-header-step></app-header-step>
+    </app-card>
+</ng-template>

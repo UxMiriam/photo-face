@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { CardComponent } from './card/card.component';
 import { IdPhotoComponent } from './id-photo/id-photo.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { HeaderStepComponent } from './components/header-step/header-step.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardComponent,
     IdPhotoComponent,
-    NavbarComponent
+    NavbarComponent,
+    HeaderStepComponent
   ],
   imports: [
     BrowserModule,

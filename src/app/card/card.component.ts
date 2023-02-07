@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 
 /**
@@ -14,6 +14,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CardComponent implements OnInit {
   @Input() data: any;
+  @Output()
+  clicked = new EventEmitter<boolean>();
   showHeader?: boolean = false;
   imageUrl?: string;
   imgAlt?: string;
@@ -21,6 +23,15 @@ export class CardComponent implements OnInit {
   paragraph: string = '';
   showBtnGhost?: boolean = false;
 
+  onClicked(){
+    this.clicked.emit(true);
+  }
+
+  /**
+   * Set the values from the data received
+   *
+   * @memberof CardComponent
+   */
   ngOnInit() {
     this.showHeader = this.data.showHeader;
     this.imageUrl = this.data.imageUrl;

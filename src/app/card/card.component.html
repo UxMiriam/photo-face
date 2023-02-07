@@ -1,5 +1,6 @@
 <div class="shadow-card">
     <div class="header-card" *ngIf="showHeader">
+        <ng-content></ng-content>
     </div>
     <div class="body-card">
         <img [src]="imageUrl" alt={{imgAlt}} class="image-card" />
@@ -7,7 +8,7 @@
         <p class="paraghap-card">{{ paragraph}}</p>
     </div>
     <div class="action-card">
-        <button type="button" class="btn btn-primary">Continuar</button>
-        <button type="button" class="btn btn-ghost">Continuar</button>
+        <button type="button" (click)="onClicked()" class="btn btn-primary">Continuar</button>
+        <button type="button" class="btn btn-ghost">Cancelar</button>
     </div>
 </div>
