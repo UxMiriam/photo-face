@@ -1,0 +1,45 @@
+.stepper{
+    background-color: #E9EEF4;
+    display: flex;   
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+    padding: 1.25rem 20%;
+    p{
+        font-size: 0.875rem;
+        font-weight: 400;
+        margin-top: .5rem;
+        margin-bottom: 0;
+    }
+}
+
+.wrapper-step{
+    display: inline-block;
+}
+
+.circle{
+    display: inline-block;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    padding: 4px;
+}
+
+.bg-inactive{
+    .circle{
+        background-color: #BCBCBC;
+    }
+    p{
+        color: #6D6E71;
+    }
+}
+
+.bg-active{
+    .circle{
+        background-color: #2196F3;
+    }
+    p{
+        color: #1B365D;
+    }
+    
+}
