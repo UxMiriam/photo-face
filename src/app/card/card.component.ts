@@ -21,8 +21,14 @@ export class CardComponent implements OnInit {
   imgAlt?: string;
   title: string = '';
   paragraph: string = '';
+  showActions?: boolean = true;
   showBtnGhost?: boolean = false;
 
+  /**
+   * Emit the click on continue
+   *
+   * @memberof CardComponent
+   */
   onClicked(){
     this.clicked.emit(true);
   }
@@ -33,11 +39,12 @@ export class CardComponent implements OnInit {
    * @memberof CardComponent
    */
   ngOnInit() {
-    this.showHeader = this.data.showHeader;
+    this.showHeader = this.data.showHeader !== undefined ? this.data.showHeader : false;
     this.imageUrl = this.data.imageUrl;
     this.imgAlt = this.data.imgAlt;
     this.title = this.data.title;
     this.paragraph = this.data.paragraph;
+    this.showActions = this.data.showActions !== undefined ? this.data.showActions : true;
     this.showBtnGhost = this.data.showBtnGhost;
   }
 }

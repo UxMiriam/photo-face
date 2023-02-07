@@ -22,6 +22,14 @@ export class IdPhotoComponent {
     imgAlt: 'Foto automática al ingresar a rectangulo azul',
     title: '¡La fotografía es automática!',
     paragraph: 'Coloca tu identificación oficial (INE, Pasaporte o FM3) dentro del margen rojo hasta que cambie a color azul.',
+    
+  }
+
+  dataId = {
+    showHeader: true,
+    title: 'Coloca dentro del margen tu identificación',
+    paragraph: 'Puedes usar tu INE, pasaporte o FM3.',
+    showActions: false,
   }
 
   /**

@@ -6,8 +6,11 @@
         <img [src]="imageUrl" alt={{imgAlt}} class="image-card" />
         <h2>{{title}}</h2>
         <p class="paraghap-card">{{ paragraph}}</p>
+        <div class="photoWrapper">
+            <ng-content></ng-content>
+        </div>
     </div>
-    <div class="action-card">
+    <div class="action-card" *ngIf="showActions">
         <button type="button" (click)="onClicked()" class="btn btn-primary">Continuar</button>
         <button type="button" class="btn btn-ghost">Cancelar</button>
     </div>
