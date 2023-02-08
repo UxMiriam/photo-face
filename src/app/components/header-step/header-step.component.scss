@@ -23,6 +23,16 @@
     width: 34px;
     height: 34px;
     padding: 4px;
+    position: relative;
+    &.line-step:before{
+        content: '';
+        position: absolute;
+        background-color: #BCBCBC;
+        width: 233%;
+        height: 1px;
+        top: 50%;
+        left: 43px;
+    }
 }
 
 .bg-inactive{
