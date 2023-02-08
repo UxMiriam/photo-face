@@ -1,6 +1,15 @@
-.header-legasing{
+.header-legasing {
     background-color: #1B365D;
-    a, .navbar-toggler-icon, .navbar-toggler {
+
+    a,
+    .navbar-toggler-icon,
+    .navbar-toggler {
         color: #fff;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-expand-md .navbar-collapse {
+        display: contents !important;
     }
 }
