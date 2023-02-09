@@ -16,11 +16,13 @@ export class CardComponent implements OnInit {
   @Input() data: any;
   @Output()
   clicked = new EventEmitter<boolean>();
+
   showHeader?: boolean = false;
   imageUrl?: string;
   imgAlt?: string;
   title: string = '';
   paragraph: string = '';
+  showVideo?: boolean = false;
   showActions?: boolean = true;
   showBtnGhost?: boolean = false;
 
@@ -44,6 +46,7 @@ export class CardComponent implements OnInit {
     this.imgAlt = this.data.imgAlt;
     this.title = this.data.title;
     this.paragraph = this.data.paragraph;
+    this.showVideo = this.data.showVideo !== undefined ? this.data.showVideo : false;
     this.showActions = this.data.showActions !== undefined ? this.data.showActions : true;
     this.showBtnGhost = this.data.showBtnGhost;
   }

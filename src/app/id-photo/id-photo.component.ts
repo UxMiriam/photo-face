@@ -30,6 +30,7 @@ export class IdPhotoComponent {
     title: 'Coloca dentro del margen tu identificación',
     paragraph: 'Puedes usar tu INE, pasaporte o FM3.',
     showActions: false,
+    showVideo: true,
   }
 
   /**
@@ -38,7 +39,6 @@ export class IdPhotoComponent {
    */
   nextView(response: boolean){
     this.instructionsOne = !this.instructionsOne
-    console.log(this.instructionsOne, 'esto')
     this.stepOne = response;
   }
 

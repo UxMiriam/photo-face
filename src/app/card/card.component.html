@@ -6,8 +6,8 @@
         <img [src]="imageUrl" alt={{imgAlt}} class="image-card" />
         <h2>{{title}}</h2>
         <p class="paraghap-card">{{ paragraph}}</p>
-        <div class="photoWrapper">
-            <ng-content></ng-content>
+        <div class="photoWrapper" *ngIf="showVideo">
+            <app-video-player></app-video-player>
         </div>
     </div>
     <div class="action-card" *ngIf="showActions">

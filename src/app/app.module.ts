@@ -7,6 +7,7 @@ import { CardComponent } from './card/card.component';
 import { IdPhotoComponent } from './id-photo/id-photo.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeaderStepComponent } from './components/header-step/header-step.component';
+import { VideoPlayerComponent } from './components/video-player/video-player.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { HeaderStepComponent } from './components/header-step/header-step.compon
     CardComponent,
     IdPhotoComponent,
     NavbarComponent,
-    HeaderStepComponent
+    HeaderStepComponent,
+    VideoPlayerComponent
   ],
   imports: [
     BrowserModule,
