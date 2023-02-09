@@ -22,6 +22,7 @@ export class CardComponent implements OnInit {
   imgAlt?: string;
   title: string = '';
   paragraph: string = '';
+  paragraphTwo?: string = '';
   showVideo?: boolean = false;
   showActions?: boolean = true;
   showBtnGhost?: boolean = false;
@@ -46,8 +47,9 @@ export class CardComponent implements OnInit {
     this.imgAlt = this.data.imgAlt;
     this.title = this.data.title;
     this.paragraph = this.data.paragraph;
+    this.paragraphTwo = this.data.paragraphTwo;
     this.showVideo = this.data.showVideo !== undefined ? this.data.showVideo : false;
     this.showActions = this.data.showActions !== undefined ? this.data.showActions : true;
-    this.showBtnGhost = this.data.showBtnGhost;
+    this.showBtnGhost = this.data.showBtnGhost !== undefined ? this.data.showBtnGhost : false;;
   }
 }

@@ -4,9 +4,11 @@ import { RouterModule, Routes } from '@angular/router';
 
 // Components View
 import { IdPhotoComponent } from '../id-photo/id-photo.component';
+import { FacePhotoComponent } from '../face-photo/face-photo.component';
 
 const routes: Routes = [
   { path: 'id-photo', component: IdPhotoComponent },
+  { path: 'face-photo', component: FacePhotoComponent },
   { path: '**', component: IdPhotoComponent }
 ]
 

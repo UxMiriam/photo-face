@@ -1,0 +1,6 @@
+<app-card *ngIf="stepOne === false; else photoFace" [data]="passData" (clicked)="nextView($event)"></app-card>
+<ng-template #photoFace>
+    <app-card [data]="dataId" class="capture-video" (clicked)="nextStep($event)">
+        <app-header-step></app-header-step>
+    </app-card>
+</ng-template>

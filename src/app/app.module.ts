@@ -8,6 +8,7 @@ import { IdPhotoComponent } from './id-photo/id-photo.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeaderStepComponent } from './components/header-step/header-step.component';
 import { VideoPlayerComponent } from './components/video-player/video-player.component';
+import { FacePhotoComponent } from './face-photo/face-photo.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { VideoPlayerComponent } from './components/video-player/video-player.com
     IdPhotoComponent,
     NavbarComponent,
     HeaderStepComponent,
-    VideoPlayerComponent
+    VideoPlayerComponent,
+    FacePhotoComponent
   ],
   imports: [
     BrowserModule,

@@ -6,12 +6,14 @@
         <img [src]="imageUrl" alt={{imgAlt}} class="image-card" />
         <h2>{{title}}</h2>
         <p class="paraghap-card">{{ paragraph}}</p>
+        <p class="blue-text">{{paragraphTwo}}</p>
         <div class="photoWrapper" *ngIf="showVideo">
             <app-video-player></app-video-player>
+            <p>Mantén la identificación dentro del recuadro para que cambie a color azul y tome la fotografía.</p>
         </div>
     </div>
     <div class="action-card" *ngIf="showActions">
         <button type="button" (click)="onClicked()" class="btn btn-primary">Continuar</button>
-        <button type="button" class="btn btn-ghost">Cancelar</button>
+        <button type="button" class="btn btn-ghost" *ngIf="showBtnGhost">Cancelar</button>
     </div>
 </div>
