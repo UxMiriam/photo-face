@@ -25,8 +25,7 @@ export class FacePhotoComponent {
 
   dataId = {
     showHeader: true,
-    title: 'Coloca dentro del margen tu identificación',
-    paragraph: 'Puedes usar tu INE, pasaporte o FM3.',
+    title: 'Coloca dentro del margen tu rostro',
     showActions: false,
     showVideo: true,
   }

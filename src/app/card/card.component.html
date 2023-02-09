@@ -3,13 +3,13 @@
         <ng-content></ng-content>
     </div>
     <div class="body-card">
-        <img [src]="imageUrl" alt={{imgAlt}} class="image-card" />
+        <img *ngIf="imageUrl" [src]="imageUrl" alt={{imgAlt}} class="image-card" />
         <h2>{{title}}</h2>
         <p class="paraghap-card">{{ paragraph}}</p>
         <p class="blue-text">{{paragraphTwo}}</p>
-        <div class="photoWrapper" *ngIf="showVideo">
-            <app-video-player></app-video-player>
-            <p>Mantén la identificación dentro del recuadro para que cambie a color azul y tome la fotografía.</p>
+        <div id="photoWrapper" class="photoWrapper" *ngIf="showVideo">
+            <app-video-player [url]="nextUrl"></app-video-player>
+            <p class="message-cam">Mantén la identificación dentro del recuadro para que cambie a color azul y tome la fotografía.</p>
         </div>
     </div>
     <div class="action-card" *ngIf="showActions">

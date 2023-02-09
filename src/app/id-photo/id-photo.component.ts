@@ -23,6 +23,7 @@ export class IdPhotoComponent {
     title: '¡La fotografía es automática!',
     paragraph: 'Coloca tu identificación oficial (INE, Pasaporte o FM3) dentro del margen rojo hasta que cambie a color azul.',
     
+    
   }
 
   dataId = {
@@ -31,11 +32,11 @@ export class IdPhotoComponent {
     paragraph: 'Puedes usar tu INE, pasaporte o FM3.',
     showActions: false,
     showVideo: true,
+    url: '/face-photo'
   }
 
   /**
    * Show capture ID card
-   * @param ques 
    */
   nextView(response: boolean){
     this.instructionsOne = !this.instructionsOne

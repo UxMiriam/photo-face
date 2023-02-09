@@ -26,6 +26,7 @@ export class CardComponent implements OnInit {
   showVideo?: boolean = false;
   showActions?: boolean = true;
   showBtnGhost?: boolean = false;
+  nextUrl: string = '#';
 
   /**
    * Emit the click on continue
@@ -50,6 +51,9 @@ export class CardComponent implements OnInit {
     this.paragraphTwo = this.data.paragraphTwo;
     this.showVideo = this.data.showVideo !== undefined ? this.data.showVideo : false;
     this.showActions = this.data.showActions !== undefined ? this.data.showActions : true;
-    this.showBtnGhost = this.data.showBtnGhost !== undefined ? this.data.showBtnGhost : false;;
+    this.showBtnGhost = this.data.showBtnGhost !== undefined ? this.data.showBtnGhost : false;
+    this.nextUrl = this.data.url
+
+    console.log(this.data);
   }
 }

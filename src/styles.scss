@@ -17,6 +17,10 @@ h6 {
     color: #1B365D;
 }
 
+h2{
+    font-size: 22px;
+}
+
 .vh-center {
     display: flex;
     width: 100vw;
@@ -39,4 +43,8 @@ h6 {
     color: #2196F3;
     background-color: transparent;
     border: transparent;
+}
+
+canvas{
+    position: absolute;
 }

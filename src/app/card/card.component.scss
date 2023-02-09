@@ -1,14 +1,13 @@
 .shadow-card {
     text-align: center;
-    padding-bottom: 2rem;
-
 }
 
-.body-card {
-    padding: 3rem 1rem 2rem 1rem;
+.header-card{
+    padding-bottom: 2rem;
 }
 
 .image-card {
+    padding-top: 3rem;
     padding-bottom: 2rem;
 }
 
@@ -28,10 +27,17 @@
     justify-content: center;
     align-items: center;
     align-content: stretch;
+    padding-bottom: 2rem;
 }
 
 .photoWrapper {
     padding: 0 2rem 2rem 2rem;
+}
+
+.message-cam{
+    margin-top: 1rem;
+    color: #FF7F00;
+    font-weight: 700;
 }
 
 
