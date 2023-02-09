@@ -1,4 +1,4 @@
-<div class="shadow-card">
+<div class="shadow-card" [ngClass]="{'capture-video': showVideo === true}">
     <div class="header-card" *ngIf="showHeader">
         <ng-content></ng-content>
     </div>
