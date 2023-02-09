@@ -2,7 +2,13 @@
     text-align: center;
 }
 
-.header-card{
+.subtitle-2{
+    color: #000;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.header-card {
     padding-bottom: 2rem;
 }
 
@@ -15,9 +21,9 @@
     padding: 1rem;
 }
 
-.blue-text{
+.blue-text {
     color: #096299;
-    font-weight: 700;    
+    font-weight: 700;
 }
 
 .action-card {
@@ -34,12 +40,54 @@
     padding: 0 2rem 2rem 2rem;
 }
 
-.message-cam{
+.message-cam {
     margin-top: 1rem;
     color: #FF7F00;
     font-weight: 700;
 }
 
+
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    margin: 8px;
+    border: 2px solid #2196F3;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #2196F3 transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 @media only screen and (min-width: 480px) {
     .shadow-card {
@@ -50,7 +98,8 @@
 
     .shadow-card {
         max-width: 487px;
-        &.capture-video{
+
+        &.capture-video {
             max-width: 650px;
         }
 

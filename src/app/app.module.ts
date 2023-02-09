@@ -9,6 +9,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HeaderStepComponent } from './components/header-step/header-step.component';
 import { VideoPlayerComponent } from './components/video-player/video-player.component';
 import { FacePhotoComponent } from './face-photo/face-photo.component';
+import { ValidationPhotosComponent } from './validation-photos/validation-photos.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FacePhotoComponent } from './face-photo/face-photo.component';
     NavbarComponent,
     HeaderStepComponent,
     VideoPlayerComponent,
-    FacePhotoComponent
+    FacePhotoComponent,
+    ValidationPhotosComponent
   ],
   imports: [
     BrowserModule,

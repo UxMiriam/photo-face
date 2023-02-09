@@ -1,5 +1,12 @@
 import { Component } from '@angular/core';
 
+
+/**
+ * View to take face photo
+ *
+ * @export
+ * @class FacePhotoComponent
+ */
 @Component({
   selector: 'app-face-photo',
   templateUrl: './face-photo.component.html',
@@ -28,6 +35,7 @@ export class FacePhotoComponent {
     title: 'Coloca dentro del margen tu rostro',
     showActions: false,
     showVideo: true,
+    url: '/validation'
   }
 
   /**

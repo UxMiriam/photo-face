@@ -16,4 +16,8 @@
         <button type="button" (click)="onClicked()" class="btn btn-primary">Continuar</button>
         <button type="button" class="btn btn-ghost" *ngIf="showBtnGhost">Cancelar</button>
     </div>
+    <div *ngIf="data.loader">
+        <p class="subtitle-2">Procesando</p>
+        <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+    </div>
 </div>
